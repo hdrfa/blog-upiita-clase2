@@ -4,6 +4,12 @@
 	background-repeat: no-repeat;
 	line-height: 500px;
 	background-size: cover;
+/*sombra en el texto*/
+	text-shadow:0px 0px 3px white;
+	-moz-text-shadow:0px 0px 3px white;
+	-webkit-text-shadow:0px 0px 3px white;
+	-o-text-shadow:0px 0px 3px white;
+	-ms-text-shadow:0px 0px 3px white;
 }
 
 .frase{
@@ -22,4 +28,48 @@
 
 #suscribirse label {
 	width: 40%;
+}
+.frase img:hover{
+	transform: scale(1.5);
+	-moz-transform: scale(1.5);/*firefox*/
+	-webkit-transform: scale(1.5);/*chrome*/
+	-o-transform: scale(1.5);/*opera*/
+	-ms-transform: scale(1.5);/*ie*/ 
+}
+/*transicion*/
+.frase img{
+	transition: all 1.5s linear;
+}
+#redes-sociales{
+	position: fixed;
+ /*top, right, left, boton*/
+	bottom: .5em;
+	right: .5em;
+	opacity: .6;
+	background-color: blue;
+	padding: 0.5em;
+/* hacer de la cajita esquinas redondas*/
+	border-radius: 5px 5px 15px 20px;
+/*el primero es el borde izquierdo superios, */
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+/*sombra a la caja*/
+	box-shadow: 0px 0px 5px 3px white;
+	-moz-box-shadow: 0px 0px 5px 10px white;
+	-webkit-box-shadow: 0px 0px 5px 10px white;
+	-o-box-shadow: 0px 0px 5px 10px white;
+	-ms-box-shadow: 0px 0px 5px 10px white;
+
+}
+#div_vacio{
+	height: 110px;
+}
+header{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	opacity: 0.6;
+	width: 100%;
 }
